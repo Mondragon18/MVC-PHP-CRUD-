@@ -1,0 +1,8 @@
+<IfModule mod_rewrite.c>
+Options -Multiviews
+RewriteEngine On
+RewriteBase /Electiva_A1_Java_IX_Semestre/Framework_MVC_PHP_CRUD/public
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
+</IfModule>
